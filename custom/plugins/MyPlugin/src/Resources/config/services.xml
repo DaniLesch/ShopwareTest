@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+        <service id="MyPlugin\Console\Command\ExampleComm">
+            <argument id="event_dispatcher"  type="service"/>
+            <tag name="console.command"/>
+        </service>
+
+        <service id="MyPlugin\Listener\MyListener">
+            <argument type="service" id="logger"/>
+            <tag name="kernel.event_listener" event="product.loaded"/>
+        </service>
+
+    </services>
+</container>
