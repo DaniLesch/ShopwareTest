@@ -20,12 +20,12 @@
         ],
         "post-install-cmd": [
             "@composer install --working-dir vendor/shopware/recovery --no-interaction --no-scripts",
-            "@composer install --working-dir=vendor/shopware/recovery/Common --no-interaction --optimize-autoloader --no-suggest",
+            "@composer install --working-dir=vendor/shopware/recovery/Common --no-interaction --optimize-autoloader",
             "[ ! -f install.lock ] || bin/console system:update:finish"
         ],
         "post-update-cmd": [
             "@composer install --working-dir vendor/shopware/recovery --no-interaction --no-scripts",
-            "@composer install --working-dir=vendor/shopware/recovery/Common --no-interaction --optimize-autoloader --no-suggest",
+            "@composer install --working-dir=vendor/shopware/recovery/Common --no-interaction --optimize-autoloader",
             "[ ! -f install.lock ] || bin/console system:update:finish"
         ]
     },
