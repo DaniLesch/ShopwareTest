@@ -1,3 +1,0 @@
-<?php //%255BShopware%255CCore%255CCheckout%255CCustomer%255CSalesChannel%255CChangePaymentMethodRoute%2523validatePaymentMethodId%255D%255B1%255D
-
-return [PHP_INT_MAX, []];
