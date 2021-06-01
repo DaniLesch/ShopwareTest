@@ -1,0 +1,11 @@
+{% sw_extends '@Storefront/storefront/base.html.twig' %}
+
+{% block base_content %}
+    <h1>Our example controller!</h1>
+    <ul>
+        {{ dump() }}
+        {% for product in products %}
+            <li> {{  product.translated.name }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
